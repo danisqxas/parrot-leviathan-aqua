@@ -16,6 +16,9 @@ parrot-leviathan-aqua/
 ├── themes/                  # Carpeta local opcional para temas (si se descargan manualmente)
 │   ├── WhiteSur-gtk-theme/  # Tema GTK clonado
 │   └── WhiteSur-icon-theme/ # Iconos WhiteSur clonados
+└── extras/                  # Utilidades o scripts complementarios opcionales
+    ├── tweaks.desktop       # Acceso directo a Gnome Tweaks
+    └── dock.desktop         # Lanzador del dock Plank
 ```
 
 ---
@@ -45,17 +48,17 @@ parrot-leviathan-aqua/
 
 ## ⚠️ Errores conocidos
 
-| Error                          | Descripción                                                                                     |
-|-------------------------------|-------------------------------------------------------------------------------------------------| 
-| Fondo de pantalla puede fallar| GitHub puede lanzar error 404 o 429; el fondo no se descarga automáticamente                   |
-| Conflictos con `pipewire`     | Algunos paquetes como `gstreamer1.0-pipewire` tienen conflictos con `libpipewire-0.3-0`       |
-| Escritorios no compatibles    | XFCE y LXQt no aplican bien los temas ni el dock. Recomendado: MATE                            |
+| Error                          | Descripción                                                                             |
+| ------------------------------ | --------------------------------------------------------------------------------------- |
+| Fondo de pantalla puede fallar | GitHub puede lanzar error 404 o 429; el fondo no se descarga automáticamente            |
+| Conflictos con `pipewire`      | Algunos paquetes como `gstreamer1.0-pipewire` tienen conflictos con `libpipewire-0.3-0` |
+| Escritorios no compatibles     | XFCE y LXQt no aplican bien los temas ni el dock. Recomendado: MATE                     |
 
 ---
 
 ## 🖼️ Captura de pantalla
 
-![screenshot](https://i.imgur.com/E1G2fov.png)
+![screenshot](https://raw.githubusercontent.com/danisqxas/parrot-leviathan-aqua/main/screenshot.png)
 
 > *Visual final con tema WhiteSur, dock activo y fondo Big Sur aplicado.*
 
