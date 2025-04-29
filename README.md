@@ -1,90 +1,55 @@
-# Parrot Leviathan Aqua 🐚💧
+# 🧬 Parrot Leviathan Aqua
 
-**Visual makeover for Parrot OS inspired by macOS Big Sur aesthetics.**
-
-> Incluye tema GTK WhiteSur, iconos, dock estilo macOS y herramientas esenciales para Parrot.
+Transformá tu Parrot OS en una experiencia visual estilo macOS Big Sur, manteniendo la potencia del entorno MATE y las herramientas avanzadas de seguridad de Parrot. Esta edición está pensada para quienes quieren rendimiento, estética y funcionalidad sin complicaciones.
 
 ---
 
-## 🌊 ¿Qué es Leviathan Aqua?
+## 📦 ¿Qué incluye Leviathan Aqua?
 
-Un script de configuración visual + funcional para Parrot OS que:
-
-- Cambia completamente el aspecto del sistema (estilo macOS)
-- Instala temas WhiteSur GTK e iconos personalizados
-- Configura Plank como dock principal
-- Descarga wallpaper Big Sur (si está disponible)
-- Incluye herramientas de hacking (Parrot Full), apps útiles y utilidades del sistema
+- Tema WhiteSur completo (GTK + Shell + Plank + Metacity + XFWM)
+- Iconos WhiteSur (bold, dark, light)
+- Dock estilo macOS (Plank)
+- Fondo de pantalla Big Sur
+- Herramientas de hacking incluidas (Parrot Full Tools)
+- Apps útiles ya instaladas (Firefox, VLC, GParted, GUFW, FileZilla, etc.)
+- Utilidades del sistema como `htop`, `neofetch`, `preload`
+- Script automatizado y personalizable
 
 ---
 
-## ⚙️ Instalación
+## 🖥️ Requisitos
 
-Desde una terminal, ejecutá:
+- ✅ Parrot OS instalado (probado en 6.3.2 MATE)
+- ✅ Acceso sudo habilitado
+- ✅ Repositorios oficiales funcionando
+- ✅ Sistema virtualizado o físico
+
+---
+
+## ⚠️ Errores conocidos
+
+| Error | Descripción |
+|------|-------------|
+| 🟥 Fondo de pantalla puede fallar | Si GitHub lanza error 404 o 429 (Too Many Requests), el fondo no se descarga automáticamente. |
+| 🟥 Conflictos con `pipewire` | Algunos paquetes como `gstreamer1.0-pipewire` tienen dependencias que chocan con versiones recientes de `libpipewire`. |
+| 🟥 Escritorios no compatibles | Algunas funciones no operan correctamente en entornos como XFCE o LXQt. MATE es el recomendado. |
+
+---
+
+## 📸 Captura de pantalla
+
+![screenshot](https://chat.openai.com/share/file/8cf856df-cace-41a0-a27c-5ef6c8ecb507/screenshot-parrot-aqua.png)
+
+> *Nota: El fondo de pantalla se descarga automáticamente solo si está disponible en GitHub.*
+
+---
+
+## 🚀 Instalación rápida
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/danisqxas/parrot-leviathan-aqua/main/instalar.sh | bash
-```
-
-> **¡IMPORTANTE!** Ejecutalo con conexión a internet y privilegios de `sudo`.
-
----
-
-## 📦 ¿Qué incluye?
-
-| Categoría           | Componentes                                                                 |
-|---------------------|-----------------------------------------------------------------------------|
-| 🎨 Tema visual      | WhiteSur GTK (modo oscuro), WhiteSur Icons, fondo estilo Big Sur            |
-| 🧩 Dock macOS       | Plank preinstalado (no se activa por defecto)                               |
-| 🛠️ Herramientas     | `parrot-tools-full` (Parrot Security Tools Suite)                           |
-| 📺 Apps útiles      | Firefox ESR, VLC, Filezilla, GParted, GUFW                                  |
-| ⚙️ Utilidades       | htop, neofetch, preload                                                      |
-| 🧼 Limpieza         | Elimina paquetes rotos o innecesarios (`autoremove`)                        |
-
----
-
-## 🧪 Requisitos
-
-- Sistema operativo: Parrot OS (tested en 6.3.2 MATE)
-- Acceso sudo habilitado
-- Repositorios oficiales funcionando
-- Estable en máquinas virtuales y físicas
-
----
-
-## ❗ Errores conocidos
-
-- ❌ Wallpaper macOS puede fallar si GitHub devuelve error 404 o 429 (Too Many Requests)
-- ❌ `gstreamer1.0-pipewire` tiene conflictos de versiones con `libpipewire-0.3-0`
-- ❌ Algunas funciones no compatibles con escritorios XFCE/LXQt
-
----
-
-## 📸 Captura (ejemplo estilo Big Sur)
-
-![screenshot](https://raw.githubusercontent.com/linuxdotexe/macOS-wallpapers/main/macOS/macOS_BigSur_1.jpg)
-
-> _Nota: El fondo se descarga automáticamente si el link está disponible._
-
----
-
-## 🧠 Créditos y agradecimientos
-
-- Tema GTK + iconos: [vinceliuice/WhiteSur-gtk-theme](https://github.com/vinceliuice/WhiteSur-gtk-theme)
-- Dock Plank: Elementary OS team
-- Fondos: [adi1090x](https://github.com/adi1090x/files)
-- Script Leviathan por: [danisqxas](https://github.com/danisqxas)
-
----
-
-## 🧪 Contacto
-
-¿Dudas, ideas o mejoras? Escribime a través de [X/Twitter](https://x.com/daniiwnet?s=21).
-
----
-
-## 🐉 Que el Leviatán despierte.
-
-¡Personalizá Parrot como nunca antes! 
-
-> _Porque hasta el hacker más oscuro merece un sistema visualmente hermoso._
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y git curl
+git clone https://github.com/danisqxas/parrot-leviathan-aqua.git
+cd parrot-leviathan-aqua
+chmod +x instalar.sh
+./instalar.sh
