@@ -10,7 +10,6 @@ Transformá tu Parrot OS en una elegante distribución con estética **macOS Big
 parrot-leviathan-aqua/
 ├── instalar.sh              # Script principal de instalación
 ├── README.md                # Documentación del proyecto
-├── screenshot.png           # Captura de pantalla estilo macOS (opcional)
 ├── wallpapers/              # Carpeta de fondos personalizados
 │   └── bigsur.jpg           # Fondo Big Sur utilizado por defecto
 ├── themes/                  # Carpeta local opcional para temas (si se descargan manualmente)
@@ -56,11 +55,9 @@ parrot-leviathan-aqua/
 
 ---
 
-## 🖼️ Captura de pantalla
+## 🎨 Visual final aproximado
 
-![screenshot](https://raw.githubusercontent.com/danisqxas/parrot-leviathan-aqua/main/screenshot.png)
-
-> *Visual final con tema WhiteSur, dock activo y fondo Big Sur aplicado.*
+> *Aplicación del tema WhiteSur, iconos, dock y fondo Big Sur simulado. Ideal para screenshots profesionales.*
 
 ---
 
